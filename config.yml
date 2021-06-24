@@ -1,0 +1,16 @@
+title: Cartographie
+description: Simple cartographie.
+template:
+  repo: cartographie-template
+  name: cartographie
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
